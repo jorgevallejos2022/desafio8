@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+body{
+    margin:8%;
+    font-family: 'Mulish', sans-serif;
+    padding: 0%;
+}
+#conteiner{
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "texto texto texto texto texto texto"
+    "galeria galeria galeria galeria . ."
+    ;
+}
+img{
+    width: 100%;
+}
+.texto{
+    grid-area: texto;
+}
+.galeria{
+    height: auto;
+    width: auto;
+    grid-area: galeria;
+    display: grid;
+    grid-template-columns:repeat(3, 33.33%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "uno dos tres"
+    "uno cuatro cuatro";
+    grid-gap: 40px;
+    
+}
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{
+    grid-area: tres;
+}
+.cuatro{
+    grid-area: cuatro;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+div{
+    object-fit: cover;
+    border-radius: 10px;
+}
+.titulo{
+    font-size: 80px;
+    font-weight: 900;
+    color: #0a2ff1;
+}
+p{
+    font-size: 40px;
+    font-weight: 400;
+    color: #0a2ff1;
+}
+.info{
+    color: #04146c;
+}
